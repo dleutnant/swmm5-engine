@@ -1,5 +1,5 @@
 # Makefile for SWMM5
-CFLAGS = -Ofast -Xpreprocessor -fopenmp
+CFLAGS = -Ofast -Xpreprocessor
 
 objs = swmm5.o climate.o controls.o culvert.o datetime.o dwflow.o dynwave.o error.o \
        exfil.o findroot.o flowrout.o forcmain.o gage.o gwater.o hash.o hotstart.o iface.o \
