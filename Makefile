@@ -12,7 +12,7 @@ objs = swmm5.o climate.o controls.o culvert.o datetime.o dwflow.o dynwave.o erro
        main.o
 
 swmm5 : $(objs)
-	$(CC) $(CFLAGS) -o swmm $(objs) -lomp -lm -lpthread
+	$(CC) $(CFLAGS) -o swmm5 $(objs) -lomp -lm -lpthread
 
 swmm5.o       : consts.h macros.h enums.h error.h datetime.h objects.h funcs.h text.h globals.h swmm5.h
 climate.o     : headers.h
