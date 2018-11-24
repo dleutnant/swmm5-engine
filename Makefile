@@ -1,4 +1,4 @@
-# Makefile for SWMM5
+# Makefile for SWMM5 dummy
 CFLAGS = -Ofast -Xpreprocessor
 
 objs = swmm5.o climate.o controls.o culvert.o datetime.o dwflow.o dynwave.o error.o \
