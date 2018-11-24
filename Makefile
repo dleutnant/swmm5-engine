@@ -1,8 +1,7 @@
 # Makefile for SWMM5
 CFLAGS = -Ofast -Xpreprocessor -fopenmp
 # to avoid using homebrew's cc path (which results into an "-c error: unknown argument")
-#CC=/usr/bin/cc
-CC=cc
+CC=/usr/bin/cc
 
 objs = swmm5.o climate.o controls.o culvert.o datetime.o dwflow.o dynwave.o error.o \
        exfil.o findroot.o flowrout.o forcmain.o gage.o gwater.o hash.o hotstart.o iface.o \
