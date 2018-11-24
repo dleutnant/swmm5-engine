@@ -1,6 +1,4 @@
-# Makefile for SWMM5 dummy
-CFLAGS = -Ofast -Xpreprocessor
-
+# Makefile for SWMM5
 objs = swmm5.o climate.o controls.o culvert.o datetime.o dwflow.o dynwave.o error.o \
        exfil.o findroot.o flowrout.o forcmain.o gage.o gwater.o hash.o hotstart.o iface.o \
        infil.o inflow.o input.o inputrpt.o keywords.o kinwave.o landuse.o lid.o \
@@ -11,7 +9,7 @@ objs = swmm5.o climate.o controls.o culvert.o datetime.o dwflow.o dynwave.o erro
 
 
 swmm5 : $(objs)
-	cc $(CFLAGS) -o swmm $(objs) -lomp -lm -lpthread
+	cc -o swmm $(objs) -lomp -lm -lpthread
 
 swmm5.o       : consts.h macros.h enums.h error.h datetime.h objects.h funcs.h text.h globals.h swmm5.h
 climate.o     : headers.h
